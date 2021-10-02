@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=width-device, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Solar Energy Soldier App</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="app-wrap">
+        <main>
+            <div class="Get_Location">
+                <div class="txt1">Choose a method to enter your location...</div>
+                <div class="b1">Enter Manually</div>
+                <div class="location-method manually">
+                    <div class="lat">Latitude <input type="number" min="-90" max="+90" placeholder="From -90 to 90"
+                            id="lat"></div>
+                    <div class="lng">Longitude <input type="number" min="-180" max="180" placeholder="From -180 to 180"
+                            id="lng"></div>
+                    <button class="submit-location submit-location-manually">Submit Location</button>
+                </div>
+                <div class="b1">Select on the map</div>
+                <div class="location-method select">
+                    <div id="map"></div>
+                    <button class="submit-location submit-location-manually">Submit Location</button>
+                </div>
+                <div class="b1 get-loc">Get Automatically</div>
+            </div>
+            <div class="live_location">
+                <section class="loc_time">
+                    <div class="loc"></div>
+                    <div class="time"></div>
+                </section>
+                <div class="get_stats">
+                    Get My Stats
+                </div>
+            </div>
+        </main>
+        <section class="fetch-container">
+            <div class="fetch-title">Fetch For</div>
+            <div class="fetch-results">
+                <button class="fetch-hour">
+                    Hour
+                </button>
+                <button class="result-2">
+                    Day
+                </button>
+                <button class="result-3">
+                    Month
+                </button>
+            </div>
+            <div class="done-fetch">
+
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
